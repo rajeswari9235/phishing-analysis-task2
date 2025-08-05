@@ -1,0 +1,33 @@
+#  Phishing Email Analysis – Task 2
+
+##  Sample Email Details
+- **From:** PayPal Security `<support@secure-paypai.com>`
+- **To:** your.email@example.com
+- **Subject:** [Action Required] Unauthorized Login Attempt Detected
+- **Attachment:** secure_account.html
+- **Link:** https://paypal.verification-alert.com/login
+
+---
+
+##  Phishing Indicators Identified
+
+| Indicator           | Description                                                                 |
+|---------------------|-----------------------------------------------------------------------------|
+|  Fake Domain       | Email is from `secure-paypai.com` (note the misspelled "paypal")            |
+|  Suspicious Link   | Hovered link goes to `verification-alert.com`, not PayPal                   |
+|  Urgent Tone       | “Complete verification within 24 hours to avoid suspension”                 |
+|  Malicious Attachment | Attached `secure_account.html` could mimic a login form                  |
+|  Generic Greeting  | Uses “Dear Customer” instead of user's name                                 |
+|  Header Check      | Analyzer shows mismatch between `Return-Path` and `From:` (spoofing)        |
+
+---
+
+##  Conclusion
+
+This phishing email uses common tactics like domain spoofing, urgent language, fake links, and HTML attachments to trick users into revealing credentials. These red flags were clearly identified during header analysis and content inspection.
+
+---
+
+##  Screenshot
+
+See: `phishing_email_screenshot.png`
